@@ -17,6 +17,19 @@ const Index = () => {
     { name: "ReactJS", level: 80 },
   ];
 
+  const projects = [
+    {
+      title: "Automatic LED On/Off",
+      description: "An automatic LED on/off system is a mechanism that controls an LED light based on certain conditions, such as motion detection, ambient light levels, or other environmental factors.",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+    },
+    {
+      title: "Portfolio",
+      description: "My portfolio showcases my expertise in modern web development, featuring projects built with technologies like ReactJS. It highlights my skills in creating interactive user interfaces to solve complex problems and deliver innovative solutions.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
@@ -93,34 +106,28 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* Projects Section */}
+      {/* Projects Section with images */}
       <Section id="projects" className="bg-gray-50">
         <SectionTitle>Projects</SectionTitle>
         <div className="grid md:grid-cols-2 gap-8">
-          <Card>
-            <CardHeader>
-              <CardTitle>Automatic LED On/Off</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-700">
-                An automatic LED on/off system is a mechanism that controls an LED light based on
-                certain conditions, such as motion detection, ambient light levels, or other
-                environmental factors.
-              </p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>Portfolio</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-700">
-                My portfolio showcases my expertise in modern web development, featuring projects built
-                with technologies like ReactJS. It highlights my skills in creating interactive user
-                interfaces to solve complex problems and deliver innovative solutions.
-              </p>
-            </CardContent>
-          </Card>
+          {projects.map((project, index) => (
+            <Card key={index} className="overflow-hidden group hover:shadow-xl transition-all duration-300">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+              <CardHeader>
+                <CardTitle>{project.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700">{project.description}</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </Section>
 
