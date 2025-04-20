@@ -38,7 +38,7 @@ const Index = () => {
           <div className="w-48 h-48 relative group">
             <Avatar className="w-full h-full">
               <AvatarImage
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+                src="/lovable-uploads/1a6a501d-4d46-42dc-913e-fb46ec6ce1a4.png"
                 alt="Brindha S"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
