@@ -73,8 +73,10 @@ const Index = () => {
         <div className="max-w-3xl mx-auto text-center transform hover:scale-105 transition-transform duration-300">
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
             I am a Computer Science and Engineering student at Knowledge Institute of Technology in Salem.
-            I am passionate about developing innovative products. In my free time, I enjoy learning new
-            technologies and products.
+            I love solving complex problems through efficient and scalable code. My experience spans 
+            across front-end design, back-end development, real-time communication, and integrating 
+            AI-based features into modern applications. I enjoy learning and staying updated with 
+            the latest in tech to continuously improve my skills and deliver high-quality products.
           </p>
         </div>
       </Section>
