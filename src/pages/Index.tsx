@@ -65,23 +65,31 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* About Section with enhanced styling */}
+      {/* About Section with updated content */}
       <Section id="about" className="bg-transparent">
         <SectionTitle className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
           About Me
         </SectionTitle>
         <div className="max-w-3xl mx-auto text-center transform hover:scale-105 transition-transform duration-300">
-          <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-            I am a Computer Science and Engineering student at Knowledge Institute of Technology in Salem.
-            I love solving complex problems through efficient and scalable code. My experience spans 
-            across front-end design, back-end development, real-time communication, and integrating 
-            AI-based features into modern applications. I enjoy learning and staying updated with 
-            the latest in tech to continuously improve my skills and deliver high-quality products.
+          <p className="text-lg text-gray-300 mb-4 leading-relaxed">
+            Educational Journey <br />
+            I have continuously expanded my knowledge through formal education, hands-on projects, and self-learning. Attending workshops and training programs has strengthened my expertise in web development.
+          </p>
+          <p className="text-lg text-gray-300 mb-4 leading-relaxed">
+            Technical Journey <br />
+            My technical expertise has grown through hands-on experience with modern frameworks and libraries. Staying up to date with cutting-edge innovations drives my passion for learning and development.
+          </p>
+          <p className="text-lg text-gray-300 mb-4 leading-relaxed">
+            Project Journey <br />
+            I have worked on various projects, blending front-end, back-end, and AI technologies to create impactful solutions. One of my key projects is "My Portfolio", where I showcased my skills using React.js, modern UI/UX design, and smooth animations to create a personal brand.
+          </p>
+          <p className="text-lg text-gray-300 mb-4 leading-relaxed">
+            I love solving complex problems through efficient and scalable code. My experience spans across front-end design, back-end development, real-time communication, and integrating AI-based features into modern applications. I enjoy learning and staying updated with the latest in tech to continuously improve my skills and deliver high-quality products.
           </p>
         </div>
       </Section>
 
-      {/* Skills section with enhanced cards */}
+      {/* Skills section with corrected text color */}
       <Section id="skills" className="bg-transparent">
         <SectionTitle className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
           Skills
@@ -93,7 +101,7 @@ const Index = () => {
               className="transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 bg-black"
             >
               <CardHeader>
-                <CardTitle className="text-lg">{skill.name}</CardTitle>
+                <CardTitle className="text-lg text-white">{skill.name}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="w-full bg-gray-800 rounded-full h-2.5 overflow-hidden">
