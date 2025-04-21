@@ -31,7 +31,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <Section className="pt-24 pb-16">
         <div className="flex flex-col md:flex-row items-center gap-12">
@@ -66,12 +66,12 @@ const Index = () => {
       </Section>
 
       {/* About Section with enhanced styling */}
-      <Section id="about" className="bg-white">
+      <Section id="about" className="bg-transparent">
         <SectionTitle className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
           About Me
         </SectionTitle>
         <div className="max-w-3xl mx-auto text-center transform hover:scale-105 transition-transform duration-300">
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+          <p className="text-lg text-gray-300 mb-6 leading-relaxed">
             I am a Computer Science and Engineering student at Knowledge Institute of Technology in Salem.
             I love solving complex problems through efficient and scalable code. My experience spans 
             across front-end design, back-end development, real-time communication, and integrating 
@@ -82,7 +82,7 @@ const Index = () => {
       </Section>
 
       {/* Skills section with enhanced cards */}
-      <Section id="skills" className="bg-white">
+      <Section id="skills" className="bg-transparent">
         <SectionTitle className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
           Skills
         </SectionTitle>
@@ -90,13 +90,13 @@ const Index = () => {
           {skills.map((skill) => (
             <Card 
               key={skill.name}
-              className="transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20"
+              className="transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 bg-black"
             >
               <CardHeader>
                 <CardTitle className="text-lg">{skill.name}</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                <div className="w-full bg-gray-800 rounded-full h-2.5 overflow-hidden">
                   <div
                     className="bg-gradient-to-r from-purple-600 to-pink-600 h-2.5 rounded-full transition-all duration-1000"
                     style={{ width: `${skill.level}%` }}
@@ -109,11 +109,11 @@ const Index = () => {
       </Section>
 
       {/* Projects Section with images */}
-      <Section id="projects" className="bg-gray-50">
+      <Section id="projects" className="bg-transparent">
         <SectionTitle>Projects</SectionTitle>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden group hover:shadow-xl transition-all duration-300">
+            <Card key={index} className="overflow-hidden group hover:shadow-xl transition-all duration-300 bg-black">
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={project.image}
@@ -126,7 +126,7 @@ const Index = () => {
                 <CardTitle>{project.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700">{project.description}</p>
+                <p className="text-gray-300">{project.description}</p>
               </CardContent>
             </Card>
           ))}
@@ -134,7 +134,7 @@ const Index = () => {
       </Section>
 
       {/* Contact Section with enhanced styling */}
-      <Section id="contact" className="bg-white">
+      <Section id="contact" className="bg-transparent">
         <SectionTitle className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
           Contact
         </SectionTitle>
@@ -142,13 +142,13 @@ const Index = () => {
           <div className="space-y-6">
             <h3 className="text-xl font-semibold mb-4">Personal Info</h3>
             <div className="space-y-4">
-              <p className="flex items-center gap-2 hover:text-purple-600 transition-colors">
+              <p className="flex items-center gap-2 hover:text-purple-600 transition-colors text-gray-300">
                 <Mail className="w-5 h-5" /> brindhasuresh031@gmail.com
               </p>
-              <p className="flex items-center gap-2 hover:text-purple-600 transition-colors">
+              <p className="flex items-center gap-2 hover:text-purple-600 transition-colors text-gray-300">
                 <Phone className="w-5 h-5" /> +98122517784
               </p>
-              <p className="flex items-center gap-2 hover:text-purple-600 transition-colors">
+              <p className="flex items-center gap-2 hover:text-purple-600 transition-colors text-gray-300">
                 <MapPin className="w-5 h-5" /> Valluvar street S.Papparapatty Attayampatty
               </p>
             </div>
@@ -156,16 +156,16 @@ const Index = () => {
           <form className="space-y-4">
             <Input 
               placeholder="Your Name" 
-              className="transition-all duration-300 focus:ring-2 focus:ring-purple-500 hover:border-purple-400"
+              className="transition-all duration-300 focus:ring-2 focus:ring-purple-500 hover:border-purple-400 bg-gray-900 text-white"
             />
             <Input 
               type="email" 
               placeholder="Your Email" 
-              className="transition-all duration-300 focus:ring-2 focus:ring-purple-500 hover:border-purple-400"
+              className="transition-all duration-300 focus:ring-2 focus:ring-purple-500 hover:border-purple-400 bg-gray-900 text-white"
             />
             <Textarea 
               placeholder="Your Message" 
-              className="h-32 transition-all duration-300 focus:ring-2 focus:ring-purple-500 hover:border-purple-400"
+              className="h-32 transition-all duration-300 focus:ring-2 focus:ring-purple-500 hover:border-purple-400 bg-gray-900 text-white"
             />
             <Button className="w-full bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
               Send Message
