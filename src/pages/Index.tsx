@@ -147,7 +147,7 @@ const Index = () => {
                 <CardTitle>{project.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-300">{project.description}</p>
+                <p className="text-gray-200">{project.description}</p>
               </CardContent>
             </Card>
           ))}
