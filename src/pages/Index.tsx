@@ -65,31 +65,44 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* About Section with updated content */}
+      {/* About Section with new structure */}
       <Section id="about" className="bg-transparent">
         <SectionTitle className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
           About Me
         </SectionTitle>
         <div className="max-w-3xl mx-auto text-center transform hover:scale-105 transition-transform duration-300">
-          <p className="text-lg text-gray-300 mb-4 leading-relaxed">
-            Educational Journey <br />
-            I have continuously expanded my knowledge through formal education, hands-on projects, and self-learning. Attending workshops and training programs has strengthened my expertise in web development.
-          </p>
-          <p className="text-lg text-gray-300 mb-4 leading-relaxed">
-            Technical Journey <br />
-            My technical expertise has grown through hands-on experience with modern frameworks and libraries. Staying up to date with cutting-edge innovations drives my passion for learning and development.
-          </p>
-          <p className="text-lg text-gray-300 mb-4 leading-relaxed">
-            Project Journey <br />
-            I have worked on various projects, blending front-end, back-end, and AI technologies to create impactful solutions. One of my key projects is "My Portfolio", where I showcased my skills using React.js, modern UI/UX design, and smooth animations to create a personal brand.
-          </p>
-          <p className="text-lg text-gray-300 mb-4 leading-relaxed">
+          <p className="text-lg text-gray-200 mb-7 leading-relaxed font-medium">
+            I am Brindha S and I am a computer science and engineering student at Knowledge Institute of Technology in Salem.
+            I am proficient in various programming languages like <span className="text-purple-400 font-semibold">C</span>, <span className="text-purple-400 font-semibold">C++</span>, <span className="text-purple-400 font-semibold">Java</span>, <span className="text-purple-400 font-semibold">HTML</span>, <span className="text-purple-400 font-semibold">CSS</span>, <span className="text-purple-400 font-semibold">Javascript</span>, <span className="text-purple-400 font-semibold">ReactJS</span>.
             I love solving complex problems through efficient and scalable code. My experience spans across front-end design, back-end development, real-time communication, and integrating AI-based features into modern applications. I enjoy learning and staying updated with the latest in tech to continuously improve my skills and deliver high-quality products.
           </p>
+          <div className="text-left mt-6 space-y-6">
+            <div>
+              <h3 className="text-2xl font-bold mb-2 text-purple-400">Educational Journey</h3>
+              <p className="text-base text-gray-300 leading-relaxed pl-2">
+                I have continuously expanded my knowledge through formal education, hands-on projects, and self-learning.
+                Attending workshops and training programs has strengthened my expertise in web development.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-2 text-purple-400">Technical Journey</h3>
+              <p className="text-base text-gray-300 leading-relaxed pl-2">
+                My technical expertise has grown through hands-on experience with modern frameworks and libraries.
+                Staying up to date with cutting-edge innovations drives my passion for learning and development.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-2 text-purple-400">Project Journey</h3>
+              <p className="text-base text-gray-300 leading-relaxed pl-2">
+                I have worked on various projects, blending front-end, back-end, and AI technologies to create impactful solutions.
+                One of my key projects is "My Portfolio", where I showcased my skills using React.js, modern UI/UX design, and smooth animations to create a personal brand.
+              </p>
+            </div>
+          </div>
         </div>
       </Section>
 
-      {/* Skills section with corrected text color */}
+      {/* Skills section with white skill names */}
       <Section id="skills" className="bg-transparent">
         <SectionTitle className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
           Skills
