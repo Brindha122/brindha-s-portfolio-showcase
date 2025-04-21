@@ -144,10 +144,10 @@ const Index = () => {
                 <div className="absolute inset-0 bg-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
+                <CardTitle className="text-purple-400">{project.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-200">{project.description}</p>
+                <p className="text-purple-300">{project.description}</p>
               </CardContent>
             </Card>
           ))}
